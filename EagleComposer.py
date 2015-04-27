@@ -25,3 +25,5 @@ for sch_sheet in sch_sheets:
         code_text = code_text_obj.text
         exec(code_text)
 
+sch_file.write(sch_out_filename)
+

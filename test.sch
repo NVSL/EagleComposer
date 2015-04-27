@@ -752,7 +752,8 @@ Source: avr.lbr</description>
 <sheets>
 <sheet>
 <plain>
-<text x="5.08" y="78.74" size="1.778" layer="213">print "Hello Eagle!"</text>
+<text x="5.08" y="78.74" size="1.778" layer="213">print "Hello Eagle!"
+code_text_obj.text += "\n#Test!"</text>
 </plain>
 <instances>
 <instance part="IC1" gate="A" x="55.88" y="50.8"/>
@@ -782,4 +783,10 @@ Source: avr.lbr</description>
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
