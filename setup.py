@@ -16,8 +16,4 @@ setup(name="EagleComposer",
       long_description=long_description,
       author="NVSL, University of California San Diego",
       packages = find_packages()
-      #[basename],
-      #package_dir= {basename: "."}
-      #
-      
 )
